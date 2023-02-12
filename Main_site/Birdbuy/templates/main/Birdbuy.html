@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BirdBuy</title>
+    <link rel="icon" href="{% static 'main/img/logo_Birdbuy.png' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/mainCss_Birdbuy.css' %}">
+
+</head>
+<body id="begin">
+    <header class="header">
+        <div class="nav">
+            <a class="Main_Logo" href="{% url 'Home' %}"><img src="{% static 'main/img/logo_Foxcompany.png' %}" alt="logo"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="{% static 'main/img/Birdbuy.png' %}" alt="logo">
+                    </div>
+                   
+                    <div class="col-lg-5">   
+                        <div class="men">
+                            <a class="mainbtn1" href="#">Главная</a>
+                            <a class="mainbtn" href="#">Каталог</a>
+                            <a class="mainbtn" href="#">Услуги</a>
+                            <a class="mainbtn" href="#">Профиль</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="elements">    
+                            <div class="mobile_fone">
+                                <img src="{% static 'main/img/tele.png' %}">
+                                <p class="locate_tele" >{{ table_of_contents.number_phone }}</p>
+                            </div>
+                            <div class="cart">
+                                <img src="{% static 'main/img/cart.png' %}">
+                                {% if table_of_contents.cart_sum_enable %}
+                                <p class="cart_text" >{{ table_of_contents.cart_sum }} р.</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+        <div class="fullscreen-bg">
+                <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+                    <source src="{% static 'main/video/ptiza.mp4' %}">
+                    <source src="{% static 'main/video/ptiza 2.webm' %}" type="video/webm">
+                </video>
+            <div class="overlay">
+                <h1 class="frend">Твой <span class="new">новый</span> друг с<br>доставкой на дом</h1>
+            </div>
+        </div>
+
+    </header>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="fon1">
+            <img src="{% static 'main/img/red_bird.png' %}" alt="red_bird" class="red_bird">
+            <div class="container">
+                <div class="row">
+                    <div class="offer offset-lg-4 col-lg-3">
+                        <h1>Часто покупаемые</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="purchase_block col">
+
+                        <div class="owl-carousel owl-theme">
+
+                            {% for product in products %}
+                            <div class="item linkblock" onclick="location.href='#';">
+                                <img src="{% static product.image %}" alt="white_bird" class="white_bird">
+                                <div class="txt_slide">
+                                    <p>{{ product.product_name }}</p>
+                                    <p class="txt">{{ product.price }} Руб.</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn offset-lg-5 col-lg-2">
+                        <a href="#" class="btn_a">Больше птиц</a>
+                    </div>
+                </div>
+            </div>
+            <img src="{% static 'main/img/blue_bird.png' %}" alt="blue_bird" class="blue_bird">
+        </div>
+            
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4">
+					<a class="footer_btn" href="#">о нас</a><p class="br"></p>
+					<a class="footer_btn" href="#">блог</a><p class="br"></p>
+					<a class="footer_btn" href="#">новости</a><p class="br"></p>
+					<a class="footer_btn" href="#">контакты</a><p class="br"></p>
+					<a class="footer_btn" href="#">политика конфиденциальности</a><p class="br"></p>
+				</div>
+
+				<div class="offset-lg-1 col-lg-1 padding_kostil_arrow">
+					<a class="arrow" href="#begin"><img src="{% static 'main/img/app_w.png' %}"></a>
+				</div>
+
+				<div class="offset-lg-3 col-lg-3 colma3">
+					<div class="locate">
+						<img src="{% static 'main/img/locate.png' %}">
+						<p class="locate_tele">г. Ростов-на-Дону,
+						Ростовская область</p>
+					</div>
+					<div class="mobile_fone">
+						<img src="{% static 'main/img/tele.png' %}">
+						<p class="locate_tele" >{{ table_of_contents.number_phone }}</p>
+					</div>
+					<div class="contact">
+						<a class="contact_img" href="#"><img src="{% static 'main/img/inst.png' %}"></a>
+						<a class="contact_img" href="#"><img src="{% static 'main/img/whats.png' %}"></a>
+						<a class="contact_img" href="#"><img src="{% static 'main/img/vk.png' %}"></a>
+					</div>
+				</div>
+
+<script src="{% static 'main/scripts/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'main/scripts/owl.carousel.min.js' %}"></script>
+<script src="{% static 'main/scripts/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'main/scripts/main_Birdbuy.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>СкитЪ</title>
+	<link rel="icon" href="{% static 'main/img/logo_Skit.png' %}">
+
+	<link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/main_Skit.css' %}">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	
+	</head>
+
+<body id="begin">
+
+	<header class="header">
+		<div class="nav">
+			<a class="Main_Logo" href="{% url 'Home' %}"><img src="{% static 'main/img/logo_Foxcompany.png' %}" alt="logo"></a>
+			<div class="men">
+				<a class="mainbtn1" href="#">Главная</a>
+				<a class="mainbtn" href="#">Афиша</a>
+				<a class="mainbtn" href="#">Новости</a>
+				<a class="mainbtn" href="#">Группа</a>
+				<a class="mainbtn" href="#">Музыка</a>
+				<a class="mainbtn" href="#">Галерея</a>
+				<a class="mainbtn" href="#">Контакты</a>
+			</div>
+			<div class="container">
+													
+				<div class="row">
+					<img src="{% static 'main/img/Logo.png' %}" alt="logo" class="offset-lg-1 col-lg-10 logo">
+				</div>
+				
+			</div>	
+		</div>
+	</header>
+
+	<section id="news" class="news">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-lg-4">	
+					<h1 class="news-title">
+						Новости группы
+					</h1>
+				</div>	
+			</div>
+		
+			<div class="row">
+				 <div class="col">
+
+				 	<div class="owl-carousel owl-theme">
+
+					    <div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news1.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">Скиты где-то в интересном месте</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+					    <div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news2.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">У Игоря день рождения!</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+						<div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news3.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">Мы круты</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+					 	<div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news4.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">Потому что четвёртый слайд надо заполнить</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+					   	<div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news1.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">Скиты где-то в интересном месте</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+					    <div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news2.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">У Игоря день рождения!</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+						<div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news3.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">Мы круты</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+						<div class="item linkblock" onclick="location.href='#';">
+					    	<img src="{% static 'main/img/news4.jpg' %}" alt="">
+					    	<div class="txt_slide">
+					    		<h2>Заголовок</h2>
+								<p class="txt">Потому что четвёртый слайд надо заполнить</p>
+								<p class="date">дата</p>
+					    	</div>
+					    </div>
+
+					</div>
+				 
+				 </div>	
+			</div>
+
+			<div class="row">
+				<div class="offset-lg-5 col-lg-4 padding_kostil">
+					<a href="#" class="btn">Больше новостей</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="music" class="music">
+		<div class="container">
+			
+			<div class="row">
+				<h1 class="music-title">
+					Наша музыка
+				</h1>
+			</div>
+
+			<div class="row">
+				
+				<div class="col-lg-6 music_vdeo">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Qp078LJhFI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-lg-6 music_menu">
+				
+					<div class="bord">
+						<div class="mv_block mv_block1 linkblock">
+							<img class="img_vid" src="{% static 'main/img/vid1.jpg' %}" alt="">
+							<div class="txt_vid">
+								<p>СкитЪ - Осенняя (автомобильная)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bord"> 
+						<div class="mv_block mv_block2 linkblock">
+							<img class="img_vid" src="{% static 'main/img/vid2.jpg' %}" alt="">
+							<div class="txt_vid">
+								<p>СкитЪ - репетиция (в Студии ОМ)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bord">
+						<div class="mv_block mv_block3 linkblock">
+							<img class="img_vid" src="{% static 'main/img/vid3.jpg' %}" alt="">
+							<div class="txt_vid">
+								<p>СкитЪ на Фестивале "Покровский Собор"</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bord">
+						<div class="mv_block mv_block4 linkblock">
+							<img class="img_vid" src="{% static 'main/img/vid4.jpg' %}" alt="">
+							<div class="txt_vid">
+								<p>"Жуковские чтения", "Счастливое время" (В.Акопян, Ростов-на-Дону)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bord">
+						<div class="mv_block mv_block5 linkblock">
+							<img class="img_vid" src="{% static 'main/img/vid5.jpg' %}" alt="">
+							<div class="txt_vid">
+								<p>"Жуковские чтения", "Чабрец" (И.Жинкин (гр.СкитЪ) Ростов-на-Дону)</p>
+							</div>
+						</div>
+					</div>	
+
+				</div>
+
+			</div>
+
+			<div class="offset-lg-5 col-lg-4 padding_kostil">
+				<a href="#" class="btn">Больше музыки</a>
+			</div>
+
+		</div>
+	</section>
+
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4">
+					<a class="footer_btn" href="#">о нас</a><p class="br"></p>
+					<a class="footer_btn" href="#">блог</a><p class="br"></p>
+					<a class="footer_btn" href="#">новости</a><p class="br"></p>
+					<a class="footer_btn" href="#">контакты</a><p class="br"></p>
+					<a class="footer_btn" href="#">политика конфиденциальности</a><p class="br"></p>
+				</div>
+
+				<div class="offset-lg-1 col-lg-1 padding_kostil_arrow">
+					<a class="arrow" href="#begin"><img src="{% static 'main/img/app_w.png' %}"></a>
+				</div>
+
+				<div class="offset-lg-3 col-lg-3 colma3">
+					<div class="locate">
+						<img src="{% static 'main/img/locate.png' %}">
+						<p class="locate_tele">г. Ростов-на-Дону,
+						Ростовская область</p>
+					</div>
+					<div class="mobile_fone">
+						<img src="{% static 'main/img/tele.png' %}">
+						<p class="locate_tele" >+7 909 178-45-45</p>
+					</div>
+					<div class="contact">
+						<a class="contact_img" href="#"><img src="{% static 'main/img/inst.png' %}"></a>
+						<a class="contact_img" href="#"><img src="{% static 'main/img/whats.png' %}"></a>
+						<a class="contact_img" href="#"><img src="{% static 'main/img/vk.png' %}"></a>
+					</div>
+				</div>
+
+<script src="{% static 'main/scripts/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'main/scripts/owl.carousel.min.js' %}"></script>
+<script src="{% static 'main/scripts/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'main/scripts/main_Skit.js' %}"></script>
+
+</body>
+</html>
